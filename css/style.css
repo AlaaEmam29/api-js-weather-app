@@ -1,0 +1,567 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    line-height: 1.9;
+}
+.nav-active
+{
+    display: block !important;
+    height: fit-content !important
+
+}
+.waves
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+a,a:hover,.nav-link,.nav-link:hover
+{
+    text-decoration: none;
+    color: white;
+}
+.weather-logo
+{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+.wather-logo-a
+{
+    font-size: 1.25rem;
+}
+.nav-links
+{
+    padding-bottom: 0.7rem;
+    font-size: 1.02rem ;
+}
+.active-hover
+{
+    transition: border-bottom 0.3s;
+
+}
+.home{
+
+border-bottom: solid 1px white;
+
+}
+.active-hover:hover
+{
+    border-bottom: solid 1px white;
+
+}
+.header-info
+{
+    padding: 4rem 4rem 0 0;
+}
+.icon-bars
+{
+    display: none;
+}
+.header-info p
+{
+    color: #455a64;
+    font-size: 1rem;
+}
+.main-color
+{
+    color: #37aec3
+}
+
+.header-content h2
+{
+    font-weight: lighter;
+}
+.search-input input ,
+.subscribe-container input
+{
+    padding: 5px 15px;
+    border: 1px solid #3199ab;
+    border-radius: 20px;
+}
+.search-input input:focus,
+.search-input input:hover,
+.subscribe-container input:focus,
+.subscribe-container input:hover
+{
+    outline-color: #3199ab !important;
+    border-color:  #3199ab !important;
+
+}
+.card-body-color{
+    background-color: #3199ab;
+}
+.row-width
+{
+    width: 85%;
+}
+.card-color
+{
+    background-color: #83bbc4;
+    transition: all 0.3s;
+}
+.card-body:hover
+{
+    background-color: #3199ab;
+}
+.card-header
+{
+    background-color: #455a64;
+    color: white;
+
+}
+
+.card-header
+{
+    border-top-left-radius: 8px!important;
+    border-top-right-radius: 8px!important;
+
+}
+.card-body
+{
+    border-bottom-left-radius: 8px!important;
+    border-bottom-right-radius: 8px!important;
+
+}
+#location
+{
+    font-size: 22px;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff;
+}
+#todayDescription,.nextDay-description
+{
+    font-size: 14px;
+    color: #455a64;
+    text-shadow: 0 0 1px #455a64,  0 0 1px #455a64;
+}
+.download-btn button,
+.subscribe-container button,
+.lightBox-content button
+{
+    border-color: #3199ab;
+    color: #fff;
+    border-radius: 1.25rem;
+transition: border-color 0.3s ,background-color 0.3s,color 0.3s;
+    background-color: #3199ab;
+}
+.download-btn button:hover,
+.subscribe-container button:hover,
+.lightBox-content button:hover
+{
+    background-color: #fff;
+    border-color: #31d2f2;
+    color: #31d2f2;
+}
+footer
+{
+    background-color: #374850;
+    padding: 20px 0;
+
+}
+footer p
+{
+    font-size: 1.1rem;
+}
+footer i
+{
+    margin-right: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+footer i:hover {color: #37aec3;}
+.submit-lightBox
+{
+    display: none;
+    z-index: 9999;
+    position: fixed;
+top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #455a6448;
+
+}
+.lightBox-content
+{
+    width: 30%;
+    border-radius: 7px;
+}
+.nav-list
+{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width :575.98px)
+{
+
+
+    .header-weather .container
+    {
+        width: 95% !important;
+    }
+
+
+    .wather-logo-a img
+    {
+        margin-right: -10px;
+    }
+    .header-content .container
+    {
+        width: 95% !important;
+    }
+    .search-sec
+    {
+        padding-top: 2rem;
+    }
+    .search-input  , .row-width
+    {
+        width: 100% !important
+    }
+    .card
+    {
+        padding-bottom: 1rem;
+    }
+    .subscribe-container input
+    {
+        width: 90% !important;
+    }
+    .lightBox-content
+    {
+        width: 80%;
+    }
+    .header-content
+    {
+        margin-top: 0!important;
+        padding-top: 0 !important;
+    }
+    .nav-list
+    {
+        display: none ;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.35s ease;
+        position: absolute;
+        top: 65%;
+        right: 2rem;
+        width: 85%;
+        box-shadow: 2px 2px rgba(0,0,0,0.4);
+        padding-top: 0.75rem;
+
+    }
+    .nav-list li
+    {
+        padding-bottom: 0.1rem;
+        padding-top: 0.7rem;
+    }
+    .nav-list li:last-child
+    {
+        padding-bottom: 0.5rem;
+
+    }
+
+    .home
+    {
+        border-radius: 20px;
+        border-width: 0;
+        background-color: #3199ab;
+        padding: 0.4rem 2rem;
+        color: #fff;
+
+    }
+    .active-hover
+    {
+        border-radius: 20px;
+        border-width: 0;
+        padding: 0.4rem 2rem;
+        background-color: transparent;
+        color: #3199ab;
+
+        transition: background-color 0.3s , color 0.3s;
+    }
+    .active-hover:hover
+    {
+        background-color: #3199ab;
+        color: #fff;
+    }
+
+    .icon-bars
+    {
+        display: block;
+    }
+    .icon-bars i
+    {
+        cursor: pointer;
+        position: relative;
+        bottom: 2vh;
+        padding: .4rem;
+        font-size: 1.5rem;
+        border: solid 1px #ffffff;
+        border-radius: 8px;
+    }
+}
+@media screen and (min-width :576px) and (max-width :767.98px)
+{
+    .header-weather .container
+    {
+        width: 100% !important;
+    }
+
+
+    .wather-logo-a img
+    {
+        margin-right: -10px;
+    }
+    .header-content .container
+    {
+        text-align: center;
+        width: 100% !important;
+    }
+    .nav-list
+    {
+        display: none ;
+        height: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+        overflow: hidden;
+        transition: height 0.35s ease;
+        position: absolute;
+        top: 9vh;
+        right: 3.5rem;
+        width: 75%;
+        box-shadow: 2px 2px rgba(0,0,0,0.4);
+        padding-top: 0.75rem;
+
+    }
+    .nav-list li
+    {
+        padding-bottom: 0.1rem;
+        padding-top: 0.7rem;
+    }
+    .nav-list li:last-child
+    {
+        padding-bottom: 0.5rem;
+
+    }
+
+    .home
+    {
+        border-radius: 20px;
+        border-width: 0;
+        background-color: #3199ab;
+        padding: 0.4rem 2rem;
+        color: #fff;
+
+    }
+    .active-hover
+    {
+        border-radius: 20px;
+        border-width: 0;
+        padding: 0.4rem 2rem;
+        background-color: transparent;
+        color: #3199ab;
+
+        transition: background-color 0.3s , color 0.3s;
+    }
+    .active-hover:hover
+    {
+        background-color: #3199ab;
+        color: #fff;
+    }
+
+    .icon-bars
+    {
+        display: block;
+    }
+    .icon-bars i
+    {
+        cursor: pointer;
+        position: relative;
+        bottom: 2vh;
+        padding: .4rem;
+        font-size: 1.5rem;
+        border: solid 1px #ffffff;
+        border-radius: 5px;
+    }
+    .search-sec
+    {
+        padding-top: 2rem;
+    }
+    .search-input  , .row-width
+    {
+        width: 100% !important
+    }
+    .card
+    {
+        padding-bottom: 1rem;
+    }
+    .subscribe-container input
+    {
+        width: 90% !important;
+    }
+    .lightBox-content
+    {
+        width: 80%;
+    }
+}
+@media screen and (min-width :768px) and (max-width :991.98px)
+{
+
+    .nav-list
+    {
+        display: none ;
+        height: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+        overflow: hidden;
+        transition: height 0.35s ease;
+        position: absolute;
+        top: 18vh;
+        right: 6rem;
+        width: 75%;
+        box-shadow: 2px 2px rgba(0,0,0,0.4);
+        padding-top: 0.75rem;
+
+    }
+    .nav-list li
+    {
+        padding-bottom: 0.1rem;
+        padding-top: 0.7rem;
+    }
+    .nav-list li:last-child
+    {
+        padding-bottom: 0.5rem;
+
+    }
+
+    .home
+    {
+        border-radius: 20px;
+        border-width: 0;
+        background-color: #3199ab;
+        padding: 0.4rem 2rem;
+        color: #fff;
+
+    }
+    .active-hover
+    {
+        border-radius: 20px;
+        border-width: 0;
+        padding: 0.4rem 2rem;
+        background-color: transparent;
+        color: #3199ab;
+
+        transition: background-color 0.3s , color 0.3s;
+    }
+    .active-hover:hover
+    {
+        background-color: #3199ab;
+        color: #fff;
+    }
+
+    .icon-bars
+    {
+        display: block;
+    }
+    .icon-bars i
+    {
+        cursor: pointer;
+        position: relative;
+        bottom: 2vh;
+        padding: .4rem;
+        font-size: 1.5rem;
+        border: solid 1px #ffffff;
+        border-radius: 5px;
+    }
+    .header-weather .container
+    {
+        width: 100% !important;
+    }
+
+
+
+    .header-content .container
+    {
+        text-align: center;
+        width: 100% !important;
+    }
+    .search-sec
+    {
+        padding-top: 2rem;
+    }
+    .search-input  , .row-width
+    {
+        width: 100% !important
+    }
+    .weather-cards .col-lg-4
+    {
+        padding-bottom: 1rem;
+    }
+    .subscribe-container input
+    {
+        width: 85% !important;
+    }
+    .lightBox-content
+    {
+        width: 65%;
+    }
+
+}
+@media screen and (min-width :992px) and (max-width :1199.98px)
+{
+    .header-weather .container
+    {
+        width: 85% !important;
+    }
+.header-content .container
+{
+    width: 100% !important;
+}
+    .search-input
+    {
+        width: 33% !important
+    }
+.row-width
+{
+    width: 100% !important;
+}
+}
+@media screen and (min-width :1200px) and (max-width :1399.98px)
+{
+    .header-weather .container
+    {
+        width: 85% !important;
+    }
+    .header-content .container
+    {
+        width: 100% !important;
+    }
+    .search-input
+    {
+        width: 35% !important
+    }
+    .row-width
+    {
+        width: 100% !important;
+    }
+
+}
+

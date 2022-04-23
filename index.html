@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+< meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header-weather position-relative py-4">
+    <div class="waves">
+        <img src="images/wave-lg.svg" alt="wave-bg">
+    </div>
+
+    <div class="container  w-75 m-auto">
+        <nav class="d-flex align-items-center justify-content-between text-white text-center ">
+            <a class="text-center wather-logo-a">
+                <img src="images/logo.png" alt="weather-logo" class="img-fluid weather-logo">
+                Weather
+            </a>
+
+            <ul id="navItem" class="list-unstyled  nav-list">
+                <li class="px-3">
+                    <a class="nav-links home"  href="#">Home </a>
+                </li>
+                <li class="px-3">
+                    <a class="nav-links active-hover" href="#about">About</a>
+                </li>
+                <li class="px-3">
+                    <a class="nav-links active-hover" href="#search">Search</a>
+                </li>
+                <li class="px-3">
+                    <a class="nav-links active-hover" href="#mobileApp">Mobile App</a>
+                </li>
+                <li class="px-3">
+                    <a class="nav-links active-hover" href="#subscribe">Subscribe</a>
+                </li>
+            </ul>
+<div class="icon-bars ">
+    <i  class="fas fa-bars"></i>
+</div>
+
+        </nav>
+
+    </div>
+
+</header>
+<section class="pt-xl-5  pt-lg-2 mt-lg-2 header-content  mt-lx-5">
+    <div class="container  w-75 m-auto">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="header-info" id="about">
+                    <h2 class="main-color mb-4">Weather App</h2>
+                    <p>
+                        Having an up to date information about the weather helps us to
+                        take well-read decisions. These weather apps constantly update
+                        the forecasts for a day or hour or sometimes for even a
+                        minute. These can be simply termed as the compact weather
+                        devices, as they do not only tell about the temperature of
+                        that specific region instead they can describe the accurate
+                        time of the sunrise and sunset, the time of the rainfall,
+                        humidity levels, etc.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="header-img">
+                    <img src="images/raining-animate-1.svg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="search" class="search-sec">
+    <div class="container ">
+        <div class="search-input w-25 m-auto" >
+            <input  type="text" placeholder="&#xF002; Search City..." style="font-family:Arial, FontAwesome" class="w-100">
+        </div>
+        <h2 class="pt-5 text-center text-danger no-matching d-none">No matching location found.</h2>
+        <div class="weather-cards row py-5 row-width m-auto text-white">
+            <div  class="firstDay col-lg-4">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h6 id="today">Monday
+                        </h6>
+                        <h6 id="todayData">
+                            18 April
+
+                        </h6>
+                    </div>
+                    <div class="card-body card-body-color">
+                        <p id="location">Cairo</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="pt-3">
+                                <h2 id="todayDegree" class="d-inline-block">21</h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                            </div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="" width="90" id="todayIcon">
+                        </div>
+                        <p id="todayDescription">Clear</p>
+                        <div class="details pb-2">
+                            <i class="fas fa-umbrella pr-1"></i>
+                            <span class="ps-1" id="humidity">94</span> <span class="pe-2">%</span>
+
+                            <i class="fas fa-wind pl-3 pr-1"></i>
+                            <span class="ps-1" id="wind">6</span> <span class="pe-2">km/h</span>
+
+                            <i class="far fa-compass pl-3 pr-1"></i>
+                            <span  class="ps-1" id="compass">N</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h6 class="nextDay">Tuesday
+                        </h6>
+                        <h6 class="nextDayData">
+                            19 April
+
+                        </h6>
+                    </div>
+                    <div class="card-body card-color d-flex  flex-column align-items-center">
+                        <img class="nextDay-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" width="90"/>
+                        <div>
+                            <h2  class="max-degree d-inline-block">21</h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                        </div>
+                        <div class="py-2">
+                            <h6 class="min-degree d-inline-block">21</h6><h6 class="d-inline-block"><sup>o</sup>C</h6>
+
+                        </div>
+                        <p class="nextDay-description">Sunny</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h6 class="nextDay">Tuesday
+                        </h6>
+                        <h6 class="nextDayData">
+                            19 April
+
+                        </h6>
+                    </div>
+                    <div class="card-body card-color d-flex  flex-column align-items-center">
+                        <img class="nextDay-icon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" width="90"/>
+                        <div>
+                            <h2  class="max-degree d-inline-block">21</h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                        </div>
+                        <div class="py-2">
+                            <h6 class="min-degree d-inline-block">21</h6><h6 class="d-inline-block"><sup>o</sup>C</h6>
+
+                        </div>
+                        <p class="nextDay-description">Sunny</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="mobileApp" class="mobile-app py-5">
+<div class="container py-3">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="download-img text-center">
+                <img class="w-100" src="images/download.png">
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="download-info text-center mt-5">
+                <h4 class="main-color mb-4">Mobile App</h4>
+                <p class="mb-4">
+                    This weather app is one of best free weather apps with full
+                    features:
+                    <br>
+                    Local weather
+
+                    weather map (weather map service)
+
+                    and weather widgets.
+                </p>
+                <div class="download-btn mt-5">
+                    <button class="btn btn-info mr-2 py-2">Download Android</button>
+                    <button class="btn btn-info py-2">Download iOS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="subscribe py-5" id="subscribe">
+    <div class="container">
+        <div class="row text-center align-items-center">
+            <div class="col-lg-8">
+                <div class="subscribe-container">
+                    <h4 class="main-color">Subscribe</h4>
+                    <p>Get daily weather updates, quotes & more..</p>
+                    <input class="w-75 m-auto" id="emailInput" type="mail" placeholder="&#xf0e0;  Enter your email to subscribe.." style="font-family:Arial, FontAwesome">
+                    <div id="emailInputAlert" class="d-none text-danger my-3">
+                        Invalid Email Address!
+                    </div>
+                    <button class="btn btn-info d-block mx-auto my-3" id="subscribeBtn">Subscribe</button>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="subscribe-img">
+                    <img class="w-75  " src="images/subscribe.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p class="text-center text-white mb-0">Copyright &copy;All rights reserved</p>
+        <div class="social-media text-white text-center mt-2">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-google-plus"></i>
+        </div>
+    </div>
+</footer>
+
+<div class="submit-lightBox vh-100">
+<div class="container  h-100 d-flex align-items-center justify-content-center">
+    <div class="lightBox-content text-center bg-white p-5  shadow">
+        <div class="lightBox-img">
+            <img class="img-fluid" src="images/submit-lightbox.svg" width="220px" height="220px">
+        </div>
+        <div class="lightBox-info">
+            <h5>Congratulations!</h5>
+            <p>You can now check your email<br>to verify your account</p>
+            <button class="btn btn-info" id="closeBtn">Close</button>
+        </div>
+    </div>
+
+</div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
