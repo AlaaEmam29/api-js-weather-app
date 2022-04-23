@@ -165,7 +165,6 @@ if (mq.matches) {
 iconBars.addEventListener('click',function ()
 {
     navItems.classList.toggle('nav-active')
-    console.log("true")
 })
 navLink.forEach((link,index)=>
 {
