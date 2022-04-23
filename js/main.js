@@ -161,21 +161,7 @@ if (mq.matches) {
 } else {
   wavesImg.setAttribute("src", "images/wave-lg.svg");
 }
-<<<<<<< HEAD
-iconBars.addEventListener("click", function () {
-  navItems.classList.toggle("nav-active");
-  console.log("true");
-});
-navLink.forEach((link, index) => {
-  link.addEventListener("click", function () {
-    navItems.classList.remove("nav-active");
-  });
-});
-=======
-else {
-    wavesImg.setAttribute("src","images/wave-lg.svg")
 
-}
 iconBars.addEventListener('click',function ()
 {
     navItems.classList.toggle('nav-active')
@@ -189,4 +175,3 @@ link.addEventListener("click",function ()
     navItems.classList.remove('nav-active')
 })
 })
->>>>>>> 1980094a726b895bb860600b10cfd6207850d09c
